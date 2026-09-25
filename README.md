@@ -1,2 +1,53 @@
 # ml-administracao-a1-angelo-leticia
 Resolução da Avaliação 1 de Machine Learning aplicado à Administração. Análise de dados do comércio global de bens criativos com o dataset OpenFCS, Python, Pandas e DuckDB.
+# 📊 Projeto Prático: Machine Learning & Inteligência de Mercado
+
+**Análise Estratégica da Concentração no Comércio Global de Bens Criativos (Dataset OpenFCS)**
+
+Este repositório contém a resolução da **Avaliação 1 (A1)** da disciplina de Machine Learning aplicado à Administração. O objetivo principal do projeto é aplicar conceitos práticos de Ciência de Dados, Machine Learning e Inteligência Artificial Generativa para diagnosticar padrões de concentração no comércio mundial de bens criativos.
+
+---
+
+## 👥 Autores
+* Leticia Santana
+* Angelo Raphael
+
+## 🏛️ Informações Acadêmicas
+* **Componente Curricular:** Machine Learning aplicado à Administração
+* **Instituição:** Curso de Graduação em Administração
+* **Professor:** Sérgio Assunção Monteiro, D.Sc.
+
+---
+
+## 🛠️ Tecnologias e Bibliotecas Utilizadas
+* **Python 3.11**
+* **Pandas:** Para manipulação, limpeza e agregação de dados.
+* **NumPy:** Para operações numéricas de alta performance.
+* **DuckDB:** Para execução de consultas SQL analíticas de forma otimizada (via `duckdb.sql()`).
+* **Google Colab:** Ambiente de desenvolvimento e execução de notebooks.
+
+---
+
+## 📂 Sobre os Dados (OpenFCS)
+A análise foi construída a partir da base de dados aberta **OpenFCS** (UNCTAD, alinhada ao UNESCO Framework for Cultural Statistics 2025). 
+* **Fonte de dados:** [OpenFCS Dataset](https://doi.org/10.5281/zenodo.21211053) — Monteiro & Dubeux (2026), CC-BY-4.0.
+* O conjunto de dados bruto foi processado com o filtro de resolução de sete domínios (`cer7`), gerando uma tabela fato (`edges7`) com mais de 1 milhão de registros de fluxos comerciais.
+
+---
+
+## 🚀 O que foi desenvolvido neste projeto?
+
+O notebook aborda as seguintes etapas analíticas:
+
+1. **Fundamentos e Exploração:** Extração de domínios únicos e contagem de fluxos para entender o volume de transações e a interconexão global, destacando áreas como "Artes Visuais (Artesanato) / Design".
+2. **Filtragem e Agregação com Pandas:** Análise específica do desempenho das exportações do **Brasil** em diferentes domínios criativos.
+3. **Consultas SQL Analíticas:** Uso do DuckDB para calcular métricas globais de exportação (ex: ano de 2023) e validação da consistência dos dados comparando resultados de consultas SQL com agregações puras em Pandas.
+4. **Modelagem de Dados e Joins:** Construção de `LEFT JOINs` para cruzar as tabelas de fatos (`edges7`) com tabelas de dimensão cruzada (`crosswalk`), além da concepção teórica de um **esquema em estrela** (Star Schema) para responder a perguntas de negócio complexas de forma eficiente.
+
+---
+
+## ⚙️ Como executar este projeto
+
+1. Faça o clone deste repositório:
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/ml-administracao-a1-leticia-angelo.git](https://github.com/SEU_USUARIO/ml-administracao-a1-leticia-angelo.git)
